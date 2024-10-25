@@ -1,0 +1,149 @@
+/* Bagian Umum */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: gray;
+  color: black;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h3,
+h5 {
+  text-align: center;
+  color: #666;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #4caf50;
+  margin: 20px 0;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: black;
+  outline: none;
+}
+
+/* Styling Khusus untuk Select */
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #fff;
+  font-size: 16px;
+  color: black;
+}
+
+.form-group select:focus {
+  border-color: #4caf50;
+}
+
+/* Grouping for Date, Month, Year */
+.form-group .date-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group select {
+  flex: 1; /* Agar semua select memiliki ukuran yang sama */
+}
+
+.gender-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.buttons input[type="reset"] {
+  background-color: #f44336;
+}
+
+.buttons input:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .form-group .date-group {
+    flex-direction: column;
+  }
+}
